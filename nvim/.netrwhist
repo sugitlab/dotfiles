@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
-let g:netrw_dirhist_5='/Users/sugit/.config/fish/completions'
-let g:netrw_dirhist_4='/Users/sugit/.config/fish'
-let g:netrw_dirhist_3='/Users/sugit/Work/gatsby/hello-world/src/styles'
-let g:netrw_dirhist_2='/Users/sugit/Work/gatsby/hello-world/src'
-let g:netrw_dirhist_1='/Users/sugit/.config/fish/conf.d'
