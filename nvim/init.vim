@@ -66,20 +66,29 @@ if dein#check_install()
   call dein#install()
 endif
 
-" ----
-"  other
-" ----
+" ---
+" markdown preview
+" ---
+let g:mkdp_open_to_the_world = 1
+let g:mkdp_open_ip = '127.0.0.1'
+let g:mkdp_port = 8080
+function! g:EchoUrl(url)
+  :echo a:url
+endfunction
+let g:mkdp_browserfunc = 'g:EchoUrl'
 
+" ---
 " color
-" Important!!
+" ---
 if has('termguicolors')
   set termguicolors
 endif
-" The configuration options should be placed before `colorscheme sonokai`.
 let g:sonokai_style = 'andromeda'
 let g:sonokai_enable_italic = 1
 let g:sonokai_disable_italic_comment = 1
 colorscheme sonokai
+
+let g:lightline = {'colorscheme' : 'sonokai'}
 
 " ----
 "  flutter
